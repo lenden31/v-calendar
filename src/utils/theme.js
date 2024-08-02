@@ -115,29 +115,22 @@ export default class Theme {
       case 'outline':
       case 'none':
         return {
-          backgroundColor: isDark ? 'var(--gray-900)' : 'var(--white)',
-          border: '2px solid',
-          borderColor: isDark ? `var(--${color}-200)` : `var(--${color}-700)`,
-          borderRadius: 'var(--rounded-full)',
+          backgroundColor: 'var(--hss-yellow)',
+          borderRadius: 'var(--hss-day-rounded)',
         };
       case 'light':
         return {
-          backgroundColor: isDark
-            ? `var(--${color}-800)`
-            : `var(--${color}-200)`,
-          opacity: isDark ? 0.75 : 1,
-          borderRadius: 'var(--rounded-full)',
+          backgroundColor: 'var(--hss-yellow)',
+          borderRadius: 'var(--hss-day-rounded)',
         };
       case 'solid':
         return {
-          backgroundColor: isDark
-            ? `var(--${color}-500)`
-            : `var(--${color}-600)`,
-          borderRadius: 'var(--rounded-full)',
+          backgroundColor: 'var(--hss-yellow)',
+          borderRadius: 'var(--hss-day-rounded)',
         };
       default:
         return {
-          borderRadius: 'var(--rounded-full)',
+          borderRadius: 'var(--hss-day-rounded)',
         };
     }
   }
@@ -147,18 +140,18 @@ export default class Theme {
       case 'outline':
       case 'none':
         return {
-          fontWeight: 'var(--font-bold)',
-          color: isDark ? `var(--${color}-100)` : `var(--${color}-900)`,
+          // fontWeight: 'var(--font-bold)',
+          // color: isDark ? `var(--${color}-100)` : `var(--${color}-900)`,
         };
       case 'light':
         return {
-          fontWeight: 'var(--font-bold)',
-          color: isDark ? `var(--${color}-100)` : `var(--${color}-900)`,
+          // fontWeight: 'var(--font-bold)',
+          // color: isDark ? `var(--${color}-100)` : `var(--${color}-900)`,
         };
       case 'solid':
         return {
-          fontWeight: 'var(--font-bold)',
-          color: 'var(--white)',
+          // fontWeight: 'var(--font-bold)',
+          // color: 'var(--white)',
         };
       default:
         return '';

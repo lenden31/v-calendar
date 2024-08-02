@@ -1,9 +1,9 @@
 {
-  "name": "v-calendar",
-  "version": "2.4.2",
+  "name": "hss-calendar",
+  "version": "1.0.3",
   "private": false,
   "description": "A clean and extendable plugin for building simple attributed calendars in Vue.js.",
-  "author": "Nathan Reyes <nathanreyes@me.com>",
+  "author": "Alex Vorobiev <lenden.uk@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve src/lib.js",
     "build": "yarn build:lib && yarn build:calendar && yarn build:date-picker && yarn build:popover && yarn build:popover-row",
@@ -18,7 +18,7 @@
     "dev": "vuepress dev docs",
     "test": "vue-cli-service test:unit --watch"
   },
-  "main": "lib/v-calendar.umd.min.js",
+  "main": "lib/hss-calendar.umd.min.js",
   "files": [
     "src",
     "lib"
@@ -75,6 +75,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nathanreyes/v-calendar"
+    "url": "https://github.com/lenden31/v-calendar"
   }
 }

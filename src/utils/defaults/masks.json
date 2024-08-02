@@ -1,6 +1,6 @@
 {
   "title": "MMMM YYYY",
-  "weekdays": "W",
+  "weekdays": "WW",
   "navMonths": "MMM",
   "input": ["L", "YYYY-MM-DD", "YYYY/MM/DD"],
   "inputDateTime": ["L h:mm A", "YYYY-MM-DD h:mm A", "YYYY/MM/DD h:mm A"],

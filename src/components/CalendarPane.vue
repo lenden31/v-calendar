@@ -221,14 +221,18 @@ export default {
 
 <style lang="postcss" scoped>
 .vc-pane {
-  min-width: 250px;
+  min-width: 282px;
 }
 
 .vc-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 18px 0 18px;
+  padding: 0px;
+  height: var(--hss-title-height);
+  border-bottom: 1px solid var(--hss-light-grey);
+  border-top: 1px solid var(--hss-light-grey);
+
   &.align-left {
     justify-content: flex-start;
   }
@@ -238,13 +242,14 @@ export default {
 }
 
 .vc-title {
-  font-size: var(--text-lg);
-  color: var(--gray-800);
-  font-weight: var(--font-semibold);
-  line-height: 28px;
+  font-size: var(--text-base);
+  color: var(--hss-grey);
+  font-weight: var(--font-medium);
+  line-height: 120%;
   cursor: pointer;
   user-select: none;
   white-space: nowrap;
+  text-transform: capitalize;
   &:hover {
     opacity: 0.75;
   }
@@ -264,8 +269,8 @@ export default {
   font-size: var(--text-xs);
   font-weight: var(--font-medium);
   font-style: italic;
-  width: 28px;
-  height: 28px;
+  width: var(--hss-day-size);
+  height: var(--hss-day-size);
   margin-top: 2px;
   color: var(--gray-500);
   user-select: none;
@@ -282,11 +287,12 @@ export default {
 .vc-weeks {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  column-gap: 5px;
   position: relative;
+  margin-top: 10px;
   /* overflow: auto; */
   -webkit-overflow-scrolling: touch;
-  padding: 5px;
-  min-width: 250px;
+  min-width: 282px;
   &.vc-show-weeknumbers {
     grid-template-columns: auto repeat(7, 1fr);
     &.is-right {
@@ -297,12 +303,14 @@ export default {
 
 .vc-weekday {
   text-align: center;
-  color: var(--gray-500);
+  color: var(--hss-grey);
+
   font-size: var(--text-sm);
-  font-weight: var(--font-bold);
-  line-height: 14px;
-  padding-top: 4px;
-  padding-bottom: 8px;
+  font-weight: var(--font-medium);
+  line-height: 120%;
+  height: 15px;
+  margin-bottom: 10px;
+
   cursor: default;
   user-select: none;
 }

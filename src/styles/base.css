@@ -2,6 +2,14 @@
   --white: #ffffff;
   --black: #000000;
 
+  --hss-grey: #414141;
+  --hss-light-grey: #D9D9D9;
+  --hss-lighter-grey: rgba(210, 210, 210, 0.5);
+  --hss-yellow: #FFD301;
+  --hss-title-height: 33px;
+  --hss-day-rounded: 10px;
+  --hss-day-size: 36px;
+
   --gray-100: #f7fafc;
   --gray-200: #edf2f7;
   --gray-300: #e2e8f0;
@@ -242,14 +250,17 @@
   display: inline-flex;
   width: max-content;
   height: max-content;
-  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    'Helvetica', 'Arial', sans-serif;
-  color: var(--gray-900);
+    'Helvetica', 'Arial', sans-serif; */
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: var(--black);
   background-color: var(--white);
-  border: 1px solid;
+  /* border: 1px solid;
   border-color: var(--gray-400);
-  border-radius: var(--rounded-lg);
+  border-radius: var(--rounded-lg); */
+  border: none;
+  padding: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;

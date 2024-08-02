@@ -839,22 +839,20 @@ export default {
   cursor: pointer;
   user-select: none;
   pointer-events: auto;
-  color: var(--gray-600);
-  border-width: 2px;
-  border-style: solid;
-  border-radius: var(--rounded);
-  border-color: transparent;
-  &:hover {
-    background: var(--gray-200);
-  }
-  &:focus {
-    border-color: var(--gray-300);
-  }
+  color: var(--hss-grey);
+  border: none;
+  width: 16px;
+  height: 16px;
 
   &.is-disabled {
     opacity: 0.25;
     pointer-events: none;
     cursor: not-allowed;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -883,7 +881,10 @@ export default {
   top: 0;
   display: flex;
   justify-content: space-between;
-  padding: 8px 10px;
+  align-items: center;
+  padding: 0px;
+  height: var(--hss-title-height);
+
   pointer-events: none;
   &.title-left {
     justify-content: flex-end;

@@ -6,7 +6,12 @@ module.exports = {
   title: 'V-Calendar',
   description: 'An elegant calendar and datepicker plugin for Vuejs.',
   plugins: [],
-  head: [['link', { rel: 'icon', href: 'favicon.png' }]],
+  head: [
+    ['link', { rel: 'icon', href: 'favicon.png' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap' }],
+  ],
   themeConfig: {
     nav: [
       {

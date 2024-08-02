@@ -435,7 +435,7 @@ export default {
 <style lang="postcss" scoped>
 .vc-day {
   position: relative;
-  min-height: 32px;
+  height: var(--hss-day-size);
   z-index: 1;
   &.is-not-in-month * {
     opacity: 0;
@@ -483,20 +483,16 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   font-weight: var(--font-medium);
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-  border-radius: var(--rounded-full);
+  width: 100%;
+  height: 100%;
+  line-height: 120%;
+  border-radius: var(--hss-day-rounded);
   user-select: none;
   cursor: pointer;
   &:hover {
-    background-color: hsla(211, 25%, 84%, 0.3);
-  }
-  &:focus {
-    font-weight: var(--font-bold);
-    background-color: hsla(211, 25%, 84%, 0.4);
+    background-color: var(--hss-lighter-grey);
   }
   &.is-disabled {
     color: var(--gray-400);
@@ -524,8 +520,8 @@ export default {
 }
 
 .vc-highlight {
-  width: 28px;
-  height: 28px;
+  width: var(--hss-day-size);
+  height: var(--hss-day-size);
   &.vc-highlight-base-start {
     width: 50% !important;
     border-radius: 0 !important;
