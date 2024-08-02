@@ -1,6 +1,6 @@
 {
   "name": "hss-calendar",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "description": "A clean and extendable plugin for building simple attributed calendars in Vue.js.",
   "author": "Alex Vorobiev <lenden.uk@gmail.com>",

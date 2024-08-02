@@ -110,7 +110,7 @@ export default class Theme {
     return highlight;
   }
 
-  getHighlightBgStyle({ fillMode, color, isDark }) {
+  getHighlightBgStyle({ fillMode }) { /* , color, isDark */
     switch (fillMode) {
       case 'outline':
       case 'none':
@@ -135,7 +135,7 @@ export default class Theme {
     }
   }
 
-  getHighlightContentStyle({ fillMode, color, isDark }) {
+  getHighlightContentStyle({ fillMode }) { /* , color, isDark */
     switch (fillMode) {
       case 'outline':
       case 'none':
